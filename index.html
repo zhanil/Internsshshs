@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+</head>
+<body>
+    <input type="text" id="bookInput">
+    <button onclick="searchBook()">Поиск</button>
+   
+    <div id="bookList"></div>
+
+    <script src="script.js"></script>
+    <div id="buyForm" style="display: none;">
+        <form onsubmit="submitForm(); return false;">
+            <input type="text" id="name" placeholder="Имя" required><br>
+            <input type="email" id="email" placeholder="Почта" required><br>
+            <input type="tel" id="phone" placeholder="Телефон" required><br>
+            <input type="text" id="address" placeholder="Адрес" required><br>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</body>
+</html>
